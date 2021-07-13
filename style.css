@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+body {
+  /* background-image: linear-gradient(to right, blue , yellow); */
+  background-image: radial-gradient(
+    circle at top left,
+    purple 25%,
+    #f06d06 
+  );
+  /* background: #003366; */
+  /* font-family: 'Asap', sans-serif; */
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 40px;
+}
+
+p {
+  font-size: 41pt;
+  color: #CC9900;
+  font-weight: bold;
+}
+
+.faded-word {
+  display: inline-block;
+  opacity: 0;
+  transform:translateY(65%);
+}
+
+.faded-activated {
+  /* transition: opacity; */
+  /* color: #FF3355; */
+  opacity: 1;
+  transform:translateY(0);
+}
+
+button {
+	font-family: 'Playfair Display', serif;
+	background:#CC9900;
+	border:none;
+	padding:15px 25px;
+	font-size:16pt;
+	color:white;
+	cursor: pointer;
+	border-radius:10px;
+	margin-top:2em;
+	outline:none;
+	transition:all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+button:hover, button:focus {
+	transform:scale(1.1);
+	filter:brightness(1.1);
+}
