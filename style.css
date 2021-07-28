@@ -13,21 +13,17 @@ body {
   padding: 40px;
 }
 
-p {
-  font-size: 41pt;
-  color: #CC9900;
-  font-weight: bold;
-}
 
 .faded-word {
   display: inline-block;
   opacity: 0;
   transform:translateY(65%);
+  font-size: 41pt;
+  color: #CC9900;
+  /* font-weight: bold; */
 }
 
 .faded-activated {
-  /* transition: opacity; */
-  /* color: #FF3355; */
   opacity: 1;
   transform:translateY(0);
 }
@@ -45,6 +41,7 @@ button {
 	outline:none;
 	transition:all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
 button:hover, button:focus {
 	transform:scale(1.1);
 	filter:brightness(1.1);

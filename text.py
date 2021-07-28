@@ -14,16 +14,11 @@ def main():
     lyricList = lyrics.split()
     lyrics = " ".join(sorted(set(lyricList), key=lyricList.index))
 
-    print(lyrics)
-
-
 
     with open('stgeorge_phrases.json', 'w') as filehandle:
         json.dump(lyricList, filehandle)
 
-    with open('stgeorge_phrases.json', 'r') as filehandle:
-        resultList = json.load(filehandle)        
-        print(resultList)
+
      
 if __name__ == '__main__':
     main()
